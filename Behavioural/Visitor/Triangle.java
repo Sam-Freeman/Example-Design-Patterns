@@ -14,6 +14,18 @@ public class Triangle implements Shape {
        this.height = height;
    }
 
+   public double[] getSideLengths() {
+       return this.sideLengths;
+   }
+
+   public double getBase() {
+       return this.base;
+   }
+
+   public double getHeight() {
+       return this.height;
+   }
+
    public void accept(Visitor v) {
        v.visit(this);
    }

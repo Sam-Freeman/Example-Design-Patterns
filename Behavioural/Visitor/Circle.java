@@ -10,6 +10,10 @@ public class Circle implements Shape {
         this.radius = radius;
     }
 
+    public double getRadius() {
+        return this.radius;
+    }
+
     public void accept(Visitor v) {
         v.visit(this);
     }

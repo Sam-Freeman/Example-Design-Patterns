@@ -12,6 +12,14 @@ public class Rectangle implements Shape {
         this.height = height;
     }
 
+    public double getWidth() {
+        return this.width;
+    }
+
+    public double getHeight() {
+        return this.height;
+    }
+
     public void accept(Visitor v) {
         v.visit(this);
     }
